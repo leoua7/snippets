@@ -1,12 +1,11 @@
 my custom ultisnip snippets for coc-snippets
 
 ```shell
-git clone git@git.lug.ustc.edu.cn:yaoyao_qiekn/ultisnips.git ~/.config/coc/ultisnips
+git clone git@github.com:leoua7/snippets.git ~/.config/coc/ultisnips
 ```
 
 ## command
 
-usage: [git@git.lug.ustc.edu.cn:yaoyao_qiekn/ultisnips.git](git@git.lug.ustc.edu.cn:yaoyao_qiekn/ultisnips.git)
 
 Use `:CocList snippets` to open snippets list used by current buffer.
 
