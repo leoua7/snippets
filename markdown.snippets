@@ -1,0 +1,68 @@
+# A valid snippet should starts with:
+#
+#		snippet trigger_word [ "description" [ options ] ]
+#
+# and end with:
+#
+#		endsnippet
+#
+# Snippet options:
+#
+#		b - Beginning of line.
+#		i - In-word expansion.
+#		w - Word boundary.
+#		r - Regular expression
+#		e - Custom context snippet
+#		A - Snippet will be triggered aomatically, when condition matches.
+#
+# Basic example:
+#
+#		snippet emitter "emitter properties" b
+#		private readonly ${1} = new Emitter<$2>()
+#		public readonly ${1/^_(.*)/$1/}: Event<$2> = this.$1.event
+#		endsnippet
+#
+# Online reference: https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt
+snippet center "div center" b
+<div style="text-align: center;">
+	$0
+</div>
+endsnippet
+
+snippet raw "raw tag" b
+{% raw %}
+$0
+{% endraw %}
+endsnippet
+
+snippet webp "oss format,webp" r
+?x-oss-process=image/format,webp
+endsnippet
+
+snippet img "html img tag" b
+<img src="$1" width="$2">
+endsnippet
+
+snippet aimg "<a> <img>" bA
+<a herf="$1"><img src="$2" alt=""></a>$0
+endsnippet
+
+snippet html** "html comment" bA
+<!-- $1 -->$0
+endsnippet
+
+snippet /tab2 "simple table" bA
+| a | b |
+| - | - |
+| a | b |
+endsnippet
+
+snippet /tab3 "simple table" bA
+| a | b | c |
+| - | - | - |
+| a | b | c |
+endsnippet
+
+snippet tablespace "table custom width" b
+<img style="width: $1">
+endsnippet
