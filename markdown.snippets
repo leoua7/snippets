@@ -23,6 +23,15 @@
 #		endsnippet
 #
 # Online reference: https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt
+snippet fm "Front-matter" b
+---
+title: ${1:Untitled}
+date: `!v strftime("%Y-%m-%d %H:%M")`
+tags: $2
+---
+$0
+endsnippet
+
 snippet center "div center" b
 <div style="text-align: center;">
 	$0
