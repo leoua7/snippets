@@ -32,6 +32,13 @@ tags: $2
 $0
 endsnippet
 
+snippet toggle "html toggle tag" b
+<details>
+<summary>${1:toggle}</summary>
+${2}
+</details>
+endsnippet
+
 snippet center "div center" b
 <div style="text-align: center;">
 	$0
@@ -56,7 +63,7 @@ snippet aimg "<a> <img>" bA
 <a herf="$1"><img src="$2" alt=""></a>$0
 endsnippet
 
-snippet html** "html comment" bA
+snippet comm "<!-- comment -->" bA
 <!-- $1 -->$0
 endsnippet
 
