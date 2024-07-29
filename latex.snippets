@@ -24,21 +24,21 @@
 #
 # Online reference: https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt
 
-snippet img "Description" bA
+snippet img "image" bA
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{$1}
 \end{figure}
 endsnippet
 
-snippet uml "Description" b
+snippet uml "uml" b
 \begin{tikzpicture}	
     \begin{class}[text width=8cm]{ClassName}{0,0}
-        \attribute{-name : attribute type}							%私有成员
-        \attribute{-name : attribute type = default value}			%私有成员
-        \operation{+name(parameter list) : type of value returned}	%公有成员
-        \operation{\#name : return type}                            %保护成员
-        \operation{$\sim$name()  }                                  %析构函数
+    \attribute{-name : attribute type}                           %私有成员
+    \attribute{-name : attribute type = default value}           %私有成员
+    \operation{+name(parameter list) : type of value returned}   %公有成员
+    \operation{\#name : return type}                             %保护成员
+    \operation{$\sim$name()  }                                   %析构函数
     \end{class}
 \end{tikzpicture}
 
